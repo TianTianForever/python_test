@@ -9,3 +9,4 @@ elif x == 1 :
     print("single")
 else :
     print("more",x)
+10
