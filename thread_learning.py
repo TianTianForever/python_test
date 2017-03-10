@@ -11,7 +11,7 @@ def execute_thread(i):
     time.sleep(rand_sleep_time)
     print("Thread {} stops sleeping at {}".format(
                   i,time.strftime("%H:%M:%S",time.gmtime())))
-for i in range(100):
+for i in range(10):
     thread = threading.Thread(target=execute_thread,args=(i,))
     thread.start()
     print("Active Threads :",threading.activeCount())
